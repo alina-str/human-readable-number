@@ -185,4 +185,5 @@ module.exports = function toReadable (number) {
   str+="one";
   number-=1;
   }
+  return str;
 }
