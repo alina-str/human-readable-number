@@ -61,43 +61,43 @@ module.exports = function toReadable (number) {
   }
   if(number<100 && number>=90)
   {
-  str+="ninety ";
   number-=90;
+  if (number==0) str+="ninety"; else str+="ninety ";
   }
   if(number<90 && number>=80)
   {
-  str+="eighty ";
   number-=80;
+  if (number==0) str+="eighty"; else str+="eighty ";
   }
   if(number<80 && number>=70)
   {
-  str+="seventy ";
   number-=70;
+  if (number==0) str+="seventy"; else str+="seventy ";
   }
   if(number<70 && number>=60)
   {
-  str+="sixty ";
   number-=60;
+  if (number==0) str+="sixty"; else str+="sixty ";
   }
   if(number<60 && number>=50)
   {
-  str+="fifty ";
   number-=50;
+  if (number==0) str+="fifty"; else str+="fifty ";
   }
   if(number<50 && number>=40)
   {
-  str+="fourty ";
   number-=40;
+  if (number==0) str+="fourty"; else str+="fourty ";
   }
   if(number<40 && number>=30)
   {
-  str+="thirty ";
   number-=30;
+  if (number==0) str+="thirty"; else str+="thirty ";
   }
   if(number<30 && number>=20)
   {
-  str+="twenty ";
   number-=20;
+  if (number==0) str+="twenty"; else str+="twenty ";
   }
   if(number==19)
   {
