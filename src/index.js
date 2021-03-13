@@ -9,46 +9,55 @@ module.exports = function toReadable (number) {
   {
   str+="nine hundred ";
   number-=900;
+  if (number==0) return "nine hundred";
   }
   if(number<900 && number>=800)
   {
   str+="eight hundred ";
   number-=800;
+  if (number==0) return "eight hundred";
   }
   if(number<800 && number>=700)
   {
   str+="seven hundred ";
   number-=700;
+  if (number==0) return "seven hundred";
   }
   if(number<700 && number>=600)
   {
   str+="six hundred ";
   number-=600;
+  if (number==0) return "six hundred";
   }
   if(number<600 && number>=500)
   {
   str+="five hundred ";
   number-=500;
+  if (number==0) return "five hundred";
   }
   if(number<500 && number>=400)
   {
   str+="four hundred ";
   number-=400;
+  if (number==0) return "four hundred";
   }
   if(number<400 && number>=300)
   {
   str+="three hundred ";
   number-=300;
+  if (number==0) return "three hundred";
   }
   if(number<300 && number>=200)
   {
   str+="two hundred ";
   number-=200;
+  if (number==0) return "two hundred";
   }
   if(number<200 && number>=100)
   {
   str+="one hundred ";
   number-=100;
+  if (number==0) return "one hundred";
   }
   if(number<100 && number>=90)
   {
